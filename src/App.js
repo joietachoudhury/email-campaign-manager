@@ -281,7 +281,6 @@ Connect with us on LinkedIn
 
   const getSuccessRate = (campaign) => {
     const sent = campaign.sentEmails.size;
-    const errors = Object.keys(campaign.errors).length;
     const total = campaign.totalRecipients;
     return total > 0 ? Math.round((sent / total) * 100) : 0;
   };
